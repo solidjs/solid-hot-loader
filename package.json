@@ -1,7 +1,7 @@
 {
   "name": "solid-hot-loader",
   "description": "A Webpack Loader to add Hot Module Replacement to SolidJS",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Ryan Carniato",
   "license": "MIT",
   "repository": {

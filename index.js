@@ -30,7 +30,7 @@ module.exports.pitch = function pitch(remainingRequest) {
   }
 
   if (isProduction) {
-    return `export * from ${file};`;
+    return `export { default } from ${file};`;
   }
 
   return loadHmr(file);
