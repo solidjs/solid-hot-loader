@@ -2,13 +2,13 @@ const loaderUtils = require('loader-utils');
 
 function loadHmr(file) {
   return `
-    import { createSignal, sample } from "solid-js";
+    import { createSignal, createMemo, untrack } from "solid-js";
     import Comp from ${file};
 
     const [s, set] = createSignal(Comp),
       Wrapped = props => {
         let c;
-        return () => (c = s()) && sample(() => c(props));
+        return createMemo(() => (c = s()) && untrack(() => c(props)));
       };
 
     export default Wrapped;
