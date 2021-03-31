@@ -18,7 +18,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js/,
+        test: /\.jsx/,
         use: ['solid-hot-loader'],
         // If and only if all your components are in `path/to/components` directory
         include: path.resolve(__dirname, 'path/to/components')
