@@ -14,7 +14,7 @@ function loadHmr(file) {
     export default Wrapped;
 
     if (module.hot) {
-      module.hot.accept(${file}, () => set(Comp));
+      module.hot.accept(${file}, () => set(() => Comp));
     }
   `;
 }

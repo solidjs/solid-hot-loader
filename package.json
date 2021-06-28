@@ -1,7 +1,7 @@
 {
   "name": "solid-hot-loader",
   "description": "A Webpack Loader to add Hot Module Replacement to SolidJS",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Ryan Carniato",
   "license": "MIT",
   "repository": {
@@ -10,12 +10,12 @@
   },
   "main": "index.js",
   "peerDependencies": {
-    "solid-js": "^0.24.0"
+    "solid-js": "^1.0.0"
   },
   "dependencies": {
     "loader-utils": "^2.0.0"
   },
   "devDependencies": {
-    "solid-js": "^0.24.0"
+    "solid-js": "^1.0.0"
   }
 }
